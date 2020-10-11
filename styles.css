@@ -1,0 +1,305 @@
+/*======================== Default ==========================*/
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+article p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/*======================== Nav bar ==========================*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topNav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topNav li.topNavRight {
+    float: right;
+}
+
+ul.topNav a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topNav a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+ul.topNav li.dropdownIcon {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/*====================== Custom Style ==========================*/
+
+#section-1-gradient {
+    background: #009FFD;
+    background: -webkit- linear-gradient(#009FFD, #2A2A72);
+    background: -o- linear-gradient(#009FFD, #2A2A72);
+    background: -moz- linear-gradient(#009FFD, #2A2A72);
+    background: linear-gradient(#009FFD, #2A2A72);
+}
+
+div.leftSide-col {
+    margin-left: 15%;
+}
+
+div.rightSide-col {
+    margin-left: 10%;
+}
+
+h1.large {
+    color: beige;
+    font-size: 40px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h2.inputLogin {
+    color: beige;
+}
+
+
+input[type="text"] {
+    font-size: 20px;
+    padding: 5px;
+    width: 400px;
+    min-width: 100px;
+    border-radius: 7px;
+}
+
+input[type="password"] {
+    font-size: 20px;
+    padding: 5px;
+    width: 400px;
+    min-width: 100px;
+    border-radius: 7px;
+}
+
+h1.section2Header {
+    font-size: 50px;
+    text-align: center;
+}
+
+div.box {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0,.25),
+        0 2px 3px 0 rgba(0, 0, 0,.1);
+    text-align: center;
+    border-radius: 7px;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.col-12 {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 14px;
+    background-color: #0069ff;
+    display: block;
+    color: white;
+    border-radius: 7px;
+    margin: 5px;
+    text-align: center;
+}
+
+button.learnMore {
+    margin: auto;
+    display: block;
+}
+
+div.secondIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px/*H*/ -2px/*V*/ 5px/*B*/ 2px/*S*/ rgba(0, 0, 0,.15),
+        2px 2px 4px 2px rgba(0, 0, 0,1);
+}
+
+footer.footerHome {
+    background-color: dimgrey;
+    padding-left: 10%;
+}
+
+footer.footerHome h2.footerTitle {
+    color: #fff;
+}
+
+footer.footerHome ul.list1 {
+    list-style: none;
+    color: #fff;
+    float: left;
+    line-height: 1.5;
+    padding-left: 0;
+}
+
+footer.footerHome ul.list1 a {
+    color: #fff;
+    text-decoration:none;
+    
+}
+
+
+
+/*======================== Mobile ===========================*/
+
+@media screen and (max-width: 680px) {
+    ul.topNav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topNav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topNav.responsive {
+        position: relative;
+    }
+    
+    ul.topNav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topNav.responsive li a {
+        text-align: left;
+        display: block;
+    }
+    
+    ul.topNav.responsive li.dropdownIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .col-6, .col-4, col-6 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.mobileFooter {
+        width: 50%;
+        display: block;
+    }
+    
+    div.leftSide-col, div.rightSide-col, .box {
+        margin: 15px;
+    }    
+    
+    input[type="text"] {
+        width: 350px;
+    }
+    
+    input[type="password"] {
+        width: 350px;
+    }
+    
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    div.leftSide-col, div.rightSide-col {
+        margin-left: 10%;
+    }
+    
+    .box {
+        padding: 5px;
+        display: block;
+    }  
+    
+    h1.section2Header {
+        font-size: 50;
+    }
+    
+    div.secondIcon {
+        margin: 15px;
+    }
+    
+    article p {
+        font-size: 20px;
+    }
+    
+    div.secondIcon img {
+        width: 100%;
+    }
+    
+}
